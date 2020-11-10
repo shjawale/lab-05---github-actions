@@ -3,22 +3,22 @@
 
 TEST(ConstructorTest, DefaultConstructorWidth){
 	Rectangle* test = new Rectangle(0, 0);
-	EXPECT_EQ(test->get-width(), 0);
+	EXPECT_EQ(test->get_width(), 0);
 }
 
 TEST(ConstructorTest, DefaultConstructorHeight){
 	Rectangle* test = new Rectangle(0, 0);
-	EXPECT_EQ(test->get-height(), 0);
+	EXPECT_EQ(test->get_height(), 0);
 }
 				
 TEST(ConstructorTest, ParameterConstructorWidth){
 	Rectangle* test = new Rectangle(2, 3);
-	EXPECT_EQ(test->get-width(), 2);
+	EXPECT_EQ(test->get_width(), 2);
 }
 
 TEST(ConstructorTest, ParameterConstructorHeight){
 	Rectangle* test = new Rectangle(2, 3);
-	EXPECT_EQ(test->get-height(), 3);
+	EXPECT_EQ(test->get_height(), 3);
 }
 
 TEST(AreaTest, TwoPositiveNum){
