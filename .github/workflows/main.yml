@@ -31,7 +31,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run all of the tests
         run: |
-          cd ${{ github.workspace }}
           cmake .
-          make all
+          make
           ./test
