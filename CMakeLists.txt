@@ -9,11 +9,6 @@ ADD_EXECUTABLE(test
 	src/rectangle.cpp
 )
 
-ADD_EXECUTABLE(lab
-	src/main.cpp
-	src/rectangle.cpp
-)
-
 TARGET_LINK_LIBRARIES(test gtest)
 TARGET_COMPILE_DEFINITIONS(test PRIVATE gtest_disable_pthreads=ON)
 				
